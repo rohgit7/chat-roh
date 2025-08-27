@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RohChat</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <!-- Full Page Chat Wrapper -->
+  <div class="chat-wrapper">
+
+    <!-- Left Panel (Join + Online users) -->
+    <div class="left-panel">
+      <div class="brand">
+        <h1>RohChat</h1>
+      </div>
+
+      <!-- Join Section -->
+      <div class="join-box">
+        <input type="text" id="nameInput" placeholder="Your Name"/>
+        <button id="setNameBtn">Join</button>
+      </div>
+
+      <!-- Online Users -->
+      <div class="users-box">
+        <h3>Online</h3>
+        <ul id="membersList" class="user-list"></ul>
+      </div>
+    </div>
+
+    <!-- Right Panel (Chat) -->
+    <div class="right-panel">
+      
+      <!-- Chat Header -->
+      <div class="chat-header">
+        <h2 class="chat-title">RohChat</h2>
+        <button id="disconnectBtn" class="disconnect-btn">Leave Room</button>
+      </div>
+
+      <!-- Chat Messages -->
+      <div class="messages-area" id="chatBox">
+        <!-- messages will appear here -->
+      </div>
+
+      <!-- Message Input -->
+      <form class="message-bar" id="messageForm">
+        <input type="text" id="messageInput" placeholder="Type a message..."/>
+        <input type="text" id="toInput" placeholder="Send Privately(Enter Name)"/>
+        <button type="button" id="sendBtn">Send ➤</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
